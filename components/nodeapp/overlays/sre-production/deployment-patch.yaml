@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodeapp
+  namespace: managed-hacbs
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/karthik_jk/nodeapp@sha256:a66d121c20f7142e7be67e6f5306b7f1101958255263c9ea1b603d160684bb8a
+        name: container-image
+        resources: {}
+status: {}
